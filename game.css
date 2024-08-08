@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color:black;
+    font-family: Roboto, Arial;
+    color: white;
+}
+
+
+
+h1{
+    font-family: Roboto, Arial;
+    color: white ;
+    font-weight: bold;
+    font-size:700;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.button{
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    border-color: black;
+}
+
+.button-container, .second-button-container, .game-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-description{
+    flex-direction: column;
+    text-align: center; 
+    margin-bottom: 20px;
+
+}
+
+.game-description h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.signbutton{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: white;
+    border: 3px solid #4CAF50;
+    margin-left: 20px;
+}
+
+.second-buttons{
+    width: 130px;
+    padding: 20px 20px;
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    font-family: Roboto, Arial;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.1s;
+    white-space: nowrap;
+    text-align: center; 
+}
+
+.second-buttons:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.second-buttons:active{
+    transform: translateY(2px); /* Moves the button when you press it*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.icons{
+    height: 70px;
+}

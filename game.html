@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+
+        <div class = "title">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="game-description">
+            <h3> Rules Of The Game: </h3>
+            <p> Choose Rock, Paper or Scissors to start the Game!</p>
+            <p> Computer's choice will be chosen at random.</p>
+            <p>Points will be tallied and displayed after every round.</p>
+            <p> Pressed the <strong>"Auto Play"</strong> button for your choice to be automated too!</p>
+            <h3>Good Luck!</h3>
+
+        </div>
+        <div class="button-container" >
+            <button class ="signbutton js-rock-button">
+                <img class="icons" src="game.icons/fist.png">
+            </button>
+            <button class ="signbutton js-paper-button">
+                <img class="icons" src="game.icons/hand-paper.png">
+            </button>
+            <button class ="signbutton js-scissor-button">
+                <img class="icons" src="game.icons/scissors.png">
+            </button>
+        </div>
+        <div class = java-output>
+            <p class="js-result"></p>
+            <p class = "js-moves"></p>
+
+            <p class = "js-score"></p>
+        </div>
+        <div class="second-button-container">
+            <button class = "second-buttons" onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            updateScore();
+            ">Reset Score</button>
+
+            <button class="second-buttons" onclick = "autoPlay();"> Auto play </button>
+        </div>
+
+        <script src = "/game.js"></script>
+    </body>  
+
+</html>
